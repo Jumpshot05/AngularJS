@@ -1,0 +1,20 @@
+<h1>Hello</h1>
+<h1>{{title}}</h1>
+<p *ngIf="count > 5">I am Visible</p>
+<p *ngIf="count ==0">Zero count</p>
+<p *ngIf="count < 0">Negative</p>
+<p *ngIf="count > 0">Positive</p>
+<p><strong>Count="{{count}}"</strong></p>
+<button (click)="increment()">Increment Count</button><br><br>
+<button (click)="decrement()">Decrement Count</button><br><br>
+<h3>The list of items are:</h3>
+<li *ngFor="let item of listOfNumbers">{{item}}</li><br>
+<h3>The list of names are:</h3>
+<li *ngFor="let name of listOfName">{{name}}</li>
+<h3>Enter the title below:</h3>
+<input type="number" [(ngModel)]="number1" >
+<input type="number" [(ngModel)]="number2" >
+
+<button (click)="Add()">Add</button><br><br>
+
+<button>Result={{result}}</button>
